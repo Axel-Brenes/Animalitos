@@ -4,6 +4,8 @@
 
 package ucr.ac.cr.animalitos;
 
+import ucr.ac.cr.animalitos.controller.ButtonController;
+
 /**
  *
  * @author Axel Abdiel Brenes Mora
@@ -11,6 +13,7 @@ package ucr.ac.cr.animalitos;
 public class Animalitos {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
-}
+        ButtonController buttonController = new ButtonController();
+    } //End of main mewthod
+    
+} //End of CLASS

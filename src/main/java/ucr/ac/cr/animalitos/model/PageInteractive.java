@@ -10,8 +10,31 @@ package ucr.ac.cr.animalitos.model;
  */
 public class PageInteractive extends Page{
     
-    public PageInteractive(String title, String content, int number) {
+    private String question;
+    private String answer;
+    
+    public PageInteractive(String question, String answer, String title, String content, int number) {
         super(title, content, number);
+        this.question = question;
+        this.answer = answer;
     } //End of Constructor
+
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
+    }
+    
+    
     
 } //End of PageInteractive class
