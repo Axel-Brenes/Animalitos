@@ -4,6 +4,8 @@
  */
 package ucr.ac.cr.animalitos.controller;
 
+import ucr.ac.cr.animalitos.view.FrmVentanaPrincipal;
+
 /**
  *
  * @author Axel
@@ -14,6 +16,9 @@ public class ButtonController {
 
     public ButtonController() {
         this.bookController = new BookController();
+        FrmVentanaPrincipal frm = new FrmVentanaPrincipal();
+        frm.setVisible(true);
+        frm.setLocationRelativeTo(null);
     } //End of constructor method
     
     public void actionListener(){
