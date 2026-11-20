@@ -4,6 +4,8 @@
  */
 package ucr.ac.cr.animalitos.controller;
 
+import javax.swing.JOptionPane;
+import ucr.ac.cr.animalitos.model.Page;
 import ucr.ac.cr.animalitos.view.FrmVentanaPrincipal;
 
 /**
@@ -13,16 +15,17 @@ import ucr.ac.cr.animalitos.view.FrmVentanaPrincipal;
 public class ButtonController {
     
     BookController bookController;
+    Page page;
 
     public ButtonController() {
         this.bookController = new BookController();
+        String title = JOptionPane.showInputDialog("Por favor escriba el título, este servirá como identificador.");
+        String content = JOptionPane.showInputDialog("Por favor escriba el contenido dentro del texto.");
         FrmVentanaPrincipal frm = new FrmVentanaPrincipal();
         frm.setVisible(true);
         frm.setLocationRelativeTo(null);
+        this.page = new Page(title, content, 1);
+        bookController.addPage(page);
     } //End of constructor method
-    
-    public void actionListener(){
-        
-    } //End of actionListener method
     
 } //End of CLASS

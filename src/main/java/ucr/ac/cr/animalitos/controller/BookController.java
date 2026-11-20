@@ -22,6 +22,8 @@ public class BookController {
         this.book = new Book();
     } //End of Constructor method
     
-    
+    public void addPage(Page page){
+        book.addPage(page);
+    } //End of addPageInteractive method
     
 } //End of BookController class

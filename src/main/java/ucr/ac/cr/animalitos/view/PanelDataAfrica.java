@@ -4,6 +4,8 @@
  */
 package ucr.ac.cr.animalitos.view;
 
+import ucr.ac.cr.animalitos.model.Page;
+
 /**
  *
  * @author Rachel
@@ -27,6 +29,7 @@ public class PanelDataAfrica extends javax.swing.JPanel {
     private void initComponents() {
 
         btnVolver = new javax.swing.JButton();
+        lblContent = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(243, 241, 237));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -43,14 +46,19 @@ public class PanelDataAfrica extends javax.swing.JPanel {
             }
         });
         add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 90, -1));
+        add(lblContent, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 270, 270));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
         FrmVentanaPrincipal.ShowJPanel(new PanelDataElegirContinente());
     }//GEN-LAST:event_btnVolverActionPerformed
 
+    public void displayInfo(Page page){
+        this.lblContent.setText(page.getContent());
+    } //End of displayInfo method
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnVolver;
+    private javax.swing.JLabel lblContent;
     // End of variables declaration//GEN-END:variables
 }
