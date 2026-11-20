@@ -4,6 +4,8 @@
  */
 package ucr.ac.cr.animalitos.view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Rachel
@@ -26,38 +28,275 @@ public class PanelDataOpcionDescubrir extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnPato = new javax.swing.JButton();
+        btnGato = new javax.swing.JButton();
+        btnCaballo = new javax.swing.JButton();
+        btnHamster = new javax.swing.JButton();
+        btnCabra = new javax.swing.JButton();
+        btnObeja = new javax.swing.JButton();
+        btnCerdo = new javax.swing.JButton();
+        btnGallina = new javax.swing.JButton();
+        btnConejo = new javax.swing.JButton();
+        btnVaca = new javax.swing.JButton();
+        btnAvestruz = new javax.swing.JButton();
+        btnBrurro = new javax.swing.JButton();
+        btnPavo = new javax.swing.JButton();
+        btnPerro = new javax.swing.JButton();
         lblTitulo = new javax.swing.JLabel();
         btnVolver = new javax.swing.JButton();
+        lblImagenAnimalesDescubrir = new javax.swing.JLabel();
+        lblBorde = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(243, 241, 237));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnPato.setBorderPainted(false);
+        btnPato.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnPato.setFocusPainted(false);
+        btnPato.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPatoActionPerformed(evt);
+            }
+        });
+        add(btnPato, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 440, 10, 10));
+
+        btnGato.setBorderPainted(false);
+        btnGato.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnGato.setFocusPainted(false);
+        btnGato.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGatoActionPerformed(evt);
+            }
+        });
+        add(btnGato, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 180, 10, 10));
+
+        btnCaballo.setBorderPainted(false);
+        btnCaballo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnCaballo.setFocusPainted(false);
+        btnCaballo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCaballoActionPerformed(evt);
+            }
+        });
+        add(btnCaballo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, 10, 10));
+
+        btnHamster.setBorderPainted(false);
+        btnHamster.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnHamster.setFocusPainted(false);
+        btnHamster.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHamsterActionPerformed(evt);
+            }
+        });
+        add(btnHamster, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 180, 10, 10));
+
+        btnCabra.setBorderPainted(false);
+        btnCabra.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnCabra.setFocusPainted(false);
+        btnCabra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCabraActionPerformed(evt);
+            }
+        });
+        add(btnCabra, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 10, 10));
+
+        btnObeja.setBorderPainted(false);
+        btnObeja.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnObeja.setFocusPainted(false);
+        btnObeja.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnObejaActionPerformed(evt);
+            }
+        });
+        add(btnObeja, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 240, 10, 10));
+
+        btnCerdo.setBorderPainted(false);
+        btnCerdo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnCerdo.setFocusPainted(false);
+        btnCerdo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerdoActionPerformed(evt);
+            }
+        });
+        add(btnCerdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 180, 10, 10));
+
+        btnGallina.setBorderPainted(false);
+        btnGallina.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnGallina.setFocusPainted(false);
+        btnGallina.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGallinaActionPerformed(evt);
+            }
+        });
+        add(btnGallina, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 430, 10, 10));
+
+        btnConejo.setBorderPainted(false);
+        btnConejo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnConejo.setFocusPainted(false);
+        btnConejo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConejoActionPerformed(evt);
+            }
+        });
+        add(btnConejo, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 430, 10, 10));
+
+        btnVaca.setBorderPainted(false);
+        btnVaca.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnVaca.setFocusPainted(false);
+        btnVaca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVacaActionPerformed(evt);
+            }
+        });
+        add(btnVaca, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 280, 10, 10));
+
+        btnAvestruz.setBorderPainted(false);
+        btnAvestruz.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnAvestruz.setFocusPainted(false);
+        btnAvestruz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAvestruzActionPerformed(evt);
+            }
+        });
+        add(btnAvestruz, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 310, 10, 10));
+
+        btnBrurro.setBorderPainted(false);
+        btnBrurro.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnBrurro.setFocusPainted(false);
+        btnBrurro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBrurroActionPerformed(evt);
+            }
+        });
+        add(btnBrurro, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 410, 10, 10));
+
+        btnPavo.setBorderPainted(false);
+        btnPavo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnPavo.setFocusPainted(false);
+        btnPavo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPavoActionPerformed(evt);
+            }
+        });
+        add(btnPavo, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 450, 10, 10));
+
+        btnPerro.setBorderPainted(false);
+        btnPerro.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnPerro.setFocusPainted(false);
+        btnPerro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPerroActionPerformed(evt);
+            }
+        });
+        add(btnPerro, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 330, 10, 10));
+
         lblTitulo.setFont(new java.awt.Font("Franklin Gothic Heavy", 1, 36)); // NOI18N
         lblTitulo.setForeground(new java.awt.Color(96, 73, 60));
         lblTitulo.setText("!Toca los animales¡");
-        add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 430, 50));
+        add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, -50, 360, 230));
 
         btnVolver.setBackground(new java.awt.Color(243, 241, 237));
         btnVolver.setFont(new java.awt.Font("Berlin Sans FB", 1, 18)); // NOI18N
         btnVolver.setForeground(new java.awt.Color(165, 69, 69));
         btnVolver.setText("Volver");
         btnVolver.setBorderPainted(false);
-        btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVolverActionPerformed(evt);
             }
         });
-        add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 90, -1));
+        add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 30, 90, 50));
+
+        lblImagenAnimalesDescubrir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Animales Descubrir.png"))); // NOI18N
+        lblImagenAnimalesDescubrir.setToolTipText("");
+        add(lblImagenAnimalesDescubrir, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 630, 370));
+
+        lblBorde.setBackground(new java.awt.Color(188, 213, 229));
+        lblBorde.setOpaque(true);
+        add(lblBorde, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 110));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
-        FrmVentanaPrincipal.ShowJPanel(new PanelDataDescubrirAnimales());
+       FrmVentanaPrincipal.ShowJPanel(new PanelDataDescubrirAnimales());
     }//GEN-LAST:event_btnVolverActionPerformed
+
+    private void btnCabraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCabraActionPerformed
+    JOptionPane.showMessageDialog(this, "¡La cabra! Es un animal que vive en granjas y montañas. Le gusta saltar y trepar por lugares rocosos. Come hierba, hojas y plantas.");
+
+    }//GEN-LAST:event_btnCabraActionPerformed
+
+    private void btnGatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGatoActionPerformed
+    JOptionPane.showMessageDialog(this, "¡El gato! Es un animal doméstico que tiene bigotes, uñas afiladas y un oído muy desarrollado. Le gusta dormir, jugar y cazar pequeños animales.");
+    }//GEN-LAST:event_btnGatoActionPerformed
+
+    private void btnHamsterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHamsterActionPerformed
+    JOptionPane.showMessageDialog(this, "¡El hámster! Es un roedor pequeño y peludito. Guarda comida en sus mejillas y le encanta correr en su rueda. Come semillas, verduras y frutas adecuadas para él.");
+    }//GEN-LAST:event_btnHamsterActionPerformed
+
+    private void btnPatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPatoActionPerformed
+    JOptionPane.showMessageDialog(this, "¡El pato! Es un ave que vive cerca del agua. Tiene patas con membranas que le ayudan a nadar y un pico ancho para buscar comida.");
+    }//GEN-LAST:event_btnPatoActionPerformed
+
+    private void btnObejaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnObejaActionPerformed
+    JOptionPane.showMessageDialog(this, "¡La oveja! Es un animal de granja cubierto de lana. Come hierba y otras plantas. Su lana se utiliza para fabricar ropa y mantas.");
+    }//GEN-LAST:event_btnObejaActionPerformed
+
+    private void btnCerdoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerdoActionPerformed
+    JOptionPane.showMessageDialog(this, "¡El cerdo! Es un animal de granja muy inteligente. Tiene un hocico fuerte que utiliza para buscar comida en la tierra. Le gusta explorar y revolcarse en el barro.");
+    }//GEN-LAST:event_btnCerdoActionPerformed
+
+    private void btnGallinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGallinaActionPerformed
+    JOptionPane.showMessageDialog(this, "¡La gallina! Es un ave de granja que tiene plumas y dos patas. Pone huevos y utiliza sus patas para escarbar la tierra y encontrar semillas e insectos.");
+    }//GEN-LAST:event_btnGallinaActionPerformed
+
+    private void btnConejoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConejoActionPerformed
+    JOptionPane.showMessageDialog(this, "¡El conejo! Es un animal pequeño con orejas largas y patas traseras fuertes. Le gusta saltar y comer hierbas y verduras adecuadas para él.");
+    }//GEN-LAST:event_btnConejoActionPerformed
+
+    private void btnVacaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVacaActionPerformed
+    JOptionPane.showMessageDialog(this, "¡La vaca! Es un animal de granja que come hierba. Tiene cuatro patas y un estómago especial que le permite digerir mejor las plantas. Las vacas producen leche.");
+    }//GEN-LAST:event_btnVacaActionPerformed
+
+    private void btnAvestruzActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAvestruzActionPerformed
+    JOptionPane.showMessageDialog(this, "¡El avestruz! Es el ave más grande del mundo, pero no puede volar. Tiene patas muy fuertes y puede correr a gran velocidad. Vive en África.");
+    }//GEN-LAST:event_btnAvestruzActionPerformed
+
+    private void btnBrurroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBrurroActionPerformed
+    JOptionPane.showMessageDialog(this, "¡El burro! Es un animal doméstico parecido al caballo, pero más pequeño. Tiene orejas largas y es muy resistente. Come hierba, hojas y plantas.");
+    }//GEN-LAST:event_btnBrurroActionPerformed
+
+    private void btnPavoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPavoActionPerformed
+    JOptionPane.showMessageDialog(this, "¡El pavo! Es un ave de granja que tiene plumas y una cola grande. El macho puede abrir sus plumas en forma de abanico para llamar la atención.");
+    }//GEN-LAST:event_btnPavoActionPerformed
+
+    private void btnPerroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPerroActionPerformed
+    JOptionPane.showMessageDialog(this, "¡El perro! Es un animal doméstico que tiene un olfato muy desarrollado. Puede aprender trucos, jugar y acompañar a las personas. Necesita alimento, agua, ejercicio y cariño.");
+    }//GEN-LAST:event_btnPerroActionPerformed
+
+    private void btnCaballoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCaballoActionPerformed
+    JOptionPane.showMessageDialog(this, "¡El caballo! Es un animal fuerte y veloz que tiene cuatro patas y una crin en el cuello. Come hierba y heno. Puede correr y saltar grandes obstáculos.");
+    }//GEN-LAST:event_btnCaballoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAvestruz;
+    private javax.swing.JButton btnBrurro;
+    private javax.swing.JButton btnCaballo;
+    private javax.swing.JButton btnCabra;
+    private javax.swing.JButton btnCerdo;
+    private javax.swing.JButton btnConejo;
+    private javax.swing.JButton btnGallina;
+    private javax.swing.JButton btnGato;
+    private javax.swing.JButton btnHamster;
+    private javax.swing.JButton btnObeja;
+    private javax.swing.JButton btnPato;
+    private javax.swing.JButton btnPavo;
+    private javax.swing.JButton btnPerro;
+    private javax.swing.JButton btnVaca;
     private javax.swing.JButton btnVolver;
+    private javax.swing.JLabel lblBorde;
+    private javax.swing.JLabel lblImagenAnimalesDescubrir;
     private javax.swing.JLabel lblTitulo;
     // End of variables declaration//GEN-END:variables
 }

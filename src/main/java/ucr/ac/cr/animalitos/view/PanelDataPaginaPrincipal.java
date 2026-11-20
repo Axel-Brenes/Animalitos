@@ -29,6 +29,8 @@ public class PanelDataPaginaPrincipal extends javax.swing.JPanel {
 
         lblFranjaCafe = new javax.swing.JPanel();
         lblImgAnimales = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        btnOpcionUsuario = new javax.swing.JButton();
         lblTitulo = new javax.swing.JLabel();
         btnDescubrirAnimales = new javax.swing.JButton();
         btnOpcionJuegoInteractivos = new javax.swing.JButton();
@@ -45,6 +47,24 @@ public class PanelDataPaginaPrincipal extends javax.swing.JPanel {
         lblImgAnimales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Animalitos Principal.png"))); // NOI18N
         lblImgAnimales.setText("jLabel1");
 
+        jLabel1.setFont(new java.awt.Font("Berlin Sans FB", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(96, 73, 60));
+        jLabel1.setText(">");
+
+        btnOpcionUsuario.setBackground(new java.awt.Color(188, 213, 229));
+        btnOpcionUsuario.setFont(new java.awt.Font("Berlin Sans FB Demi", 1, 18)); // NOI18N
+        btnOpcionUsuario.setForeground(new java.awt.Color(96, 73, 60));
+        btnOpcionUsuario.setText("Ver Usuario");
+        btnOpcionUsuario.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 204), 2, true));
+        btnOpcionUsuario.setBorderPainted(false);
+        btnOpcionUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnOpcionUsuario.setFocusPainted(false);
+        btnOpcionUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOpcionUsuarioActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout lblFranjaCafeLayout = new javax.swing.GroupLayout(lblFranjaCafe);
         lblFranjaCafe.setLayout(lblFranjaCafeLayout);
         lblFranjaCafeLayout.setHorizontalGroup(
@@ -52,11 +72,24 @@ public class PanelDataPaginaPrincipal extends javax.swing.JPanel {
             .addGroup(lblFranjaCafeLayout.createSequentialGroup()
                 .addComponent(lblImgAnimales, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 9, Short.MAX_VALUE))
+            .addGroup(lblFranjaCafeLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(jLabel1)
+                .addGap(9, 9, 9)
+                .addComponent(btnOpcionUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         lblFranjaCafeLayout.setVerticalGroup(
             lblFranjaCafeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lblFranjaCafeLayout.createSequentialGroup()
-                .addContainerGap(72, Short.MAX_VALUE)
+                .addContainerGap(19, Short.MAX_VALUE)
+                .addGroup(lblFranjaCafeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lblFranjaCafeLayout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(8, 8, 8))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lblFranjaCafeLayout.createSequentialGroup()
+                        .addComponent(btnOpcionUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14)))
                 .addComponent(lblImgAnimales)
                 .addGap(58, 58, 58))
         );
@@ -75,7 +108,7 @@ public class PanelDataPaginaPrincipal extends javax.swing.JPanel {
         btnDescubrirAnimales.setText("¡Descubre nuevos animales!");
         btnDescubrirAnimales.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 204), 2, true));
         btnDescubrirAnimales.setBorderPainted(false);
-        btnDescubrirAnimales.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnDescubrirAnimales.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnDescubrirAnimales.setFocusPainted(false);
         btnDescubrirAnimales.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,7 +122,7 @@ public class PanelDataPaginaPrincipal extends javax.swing.JPanel {
         btnOpcionJuegoInteractivos.setForeground(new java.awt.Color(96, 73, 60));
         btnOpcionJuegoInteractivos.setText("Juegos Interactivos");
         btnOpcionJuegoInteractivos.setBorderPainted(false);
-        btnOpcionJuegoInteractivos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnOpcionJuegoInteractivos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnOpcionJuegoInteractivos.setFocusPainted(false);
         btnOpcionJuegoInteractivos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,7 +136,7 @@ public class PanelDataPaginaPrincipal extends javax.swing.JPanel {
         btnOpcionConsejos.setForeground(new java.awt.Color(96, 73, 60));
         btnOpcionConsejos.setText("Consejos");
         btnOpcionConsejos.setBorderPainted(false);
-        btnOpcionConsejos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnOpcionConsejos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnOpcionConsejos.setFocusPainted(false);
         btnOpcionConsejos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,7 +149,7 @@ public class PanelDataPaginaPrincipal extends javax.swing.JPanel {
         btnSalir.setFont(new java.awt.Font("Berlin Sans FB", 1, 18)); // NOI18N
         btnSalir.setForeground(new java.awt.Color(165, 69, 69));
         btnSalir.setText("Salir");
-        btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnSalir.setFocusPainted(false);
         btnSalir.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -131,7 +164,7 @@ public class PanelDataPaginaPrincipal extends javax.swing.JPanel {
         btnOpcionInformacionAnimalitos.setForeground(new java.awt.Color(96, 73, 60));
         btnOpcionInformacionAnimalitos.setText("¿De qué va Animalitos?");
         btnOpcionInformacionAnimalitos.setBorderPainted(false);
-        btnOpcionInformacionAnimalitos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnOpcionInformacionAnimalitos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnOpcionInformacionAnimalitos.setFocusPainted(false);
         btnOpcionInformacionAnimalitos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,13 +195,19 @@ public class PanelDataPaginaPrincipal extends javax.swing.JPanel {
         System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
 
+    private void btnOpcionUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOpcionUsuarioActionPerformed
+        FrmVentanaPrincipal.ShowJPanel(new PanelDataInformacionUsuario());
+    }//GEN-LAST:event_btnOpcionUsuarioActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDescubrirAnimales;
     private javax.swing.JButton btnOpcionConsejos;
     private javax.swing.JButton btnOpcionInformacionAnimalitos;
     private javax.swing.JButton btnOpcionJuegoInteractivos;
+    private javax.swing.JButton btnOpcionUsuario;
     private javax.swing.JButton btnSalir;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel lblFranjaCafe;
     private javax.swing.JLabel lblImgAnimales;
     private javax.swing.JLabel lblTitulo;

@@ -6,14 +6,14 @@ package ucr.ac.cr.animalitos.view;
 
 /**
  *
- * @author Rachel
+ * @author Axel, Rachel, Jimena
  */
-public class PanelDataAmerica extends javax.swing.JPanel {
+public class PanelDataAmericaSur extends javax.swing.JPanel {
 
     /**
      * Creates new form PanelDataAmerica
      */
-    public PanelDataAmerica() {
+    public PanelDataAmericaSur() {
         initComponents();
     }
 
@@ -28,6 +28,7 @@ public class PanelDataAmerica extends javax.swing.JPanel {
 
         jLabel2 = new javax.swing.JLabel();
         btnVolver = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         jLabel2.setText("jLabel2");
 
@@ -46,6 +47,9 @@ public class PanelDataAmerica extends javax.swing.JPanel {
             }
         });
         add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 90, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/americaSur.png"))); // NOI18N
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
@@ -56,5 +60,6 @@ public class PanelDataAmerica extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnVolver;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

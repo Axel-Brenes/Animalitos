@@ -8,7 +8,7 @@ import ucr.ac.cr.animalitos.controller.ButtonController;
 
 /**
  *
- * @author Axel Abdiel Brenes Mora
+ * @author Axel, Rachel, Jimena
  */
 public class Animalitos {
 

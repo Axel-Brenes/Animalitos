@@ -6,7 +6,7 @@ package ucr.ac.cr.animalitos.view;
 
 /**
  *
- * @author Rachel
+ * @author Axel, Rachel, Jimena
  */
 public class PanleDataJuegosInteractivos extends javax.swing.JPanel {
 
@@ -30,6 +30,8 @@ public class PanleDataJuegosInteractivos extends javax.swing.JPanel {
         lblTitulo = new javax.swing.JLabel();
         btnVolver = new javax.swing.JButton();
         btnOpcionDatosCuriosos1 = new javax.swing.JButton();
+        lblImagen = new javax.swing.JLabel();
+        lblBorde = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(243, 241, 237));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -43,30 +45,40 @@ public class PanleDataJuegosInteractivos extends javax.swing.JPanel {
                 btnOpcionDatosCuriososActionPerformed(evt);
             }
         });
-        add(btnOpcionDatosCuriosos, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 300, 50));
+        add(btnOpcionDatosCuriosos, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 250, 50));
 
         lblTitulo.setFont(new java.awt.Font("Franklin Gothic Heavy", 1, 48)); // NOI18N
         lblTitulo.setForeground(new java.awt.Color(96, 73, 60));
         lblTitulo.setText("Juegos Interactivos");
-        add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, -1, -1));
+        add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, -1, -1));
 
         btnVolver.setBackground(new java.awt.Color(243, 241, 237));
         btnVolver.setFont(new java.awt.Font("Berlin Sans FB", 1, 18)); // NOI18N
         btnVolver.setForeground(new java.awt.Color(165, 69, 69));
         btnVolver.setText("Volver");
-        btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVolverActionPerformed(evt);
             }
         });
-        add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 380, 300, 50));
+        add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 250, 50));
 
         btnOpcionDatosCuriosos1.setBackground(new java.awt.Color(188, 213, 229));
         btnOpcionDatosCuriosos1.setFont(new java.awt.Font("Berlin Sans FB", 1, 18)); // NOI18N
-        btnOpcionDatosCuriosos1.setText("Adivina el animal");
+        btnOpcionDatosCuriosos1.setText("Adivina el sonido");
         btnOpcionDatosCuriosos1.setBorderPainted(false);
-        add(btnOpcionDatosCuriosos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, 300, 50));
+        btnOpcionDatosCuriosos1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOpcionDatosCuriosos1ActionPerformed(evt);
+            }
+        });
+        add(btnOpcionDatosCuriosos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 250, 50));
+        add(lblImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 500, -1));
+
+        lblBorde.setBackground(new java.awt.Color(188, 213, 229));
+        lblBorde.setOpaque(true);
+        add(lblBorde, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 110));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
@@ -77,11 +89,17 @@ public class PanleDataJuegosInteractivos extends javax.swing.JPanel {
         FrmVentanaPrincipal.ShowJPanel(new PanleDataDatoCuriosoUno());
     }//GEN-LAST:event_btnOpcionDatosCuriososActionPerformed
 
+    private void btnOpcionDatosCuriosos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOpcionDatosCuriosos1ActionPerformed
+        FrmVentanaPrincipal.ShowJPanel(new PanelDataAdivinaAnimal());
+    }//GEN-LAST:event_btnOpcionDatosCuriosos1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnOpcionDatosCuriosos;
     private javax.swing.JButton btnOpcionDatosCuriosos1;
     private javax.swing.JButton btnVolver;
+    private javax.swing.JLabel lblBorde;
+    private javax.swing.JLabel lblImagen;
     private javax.swing.JLabel lblTitulo;
     // End of variables declaration//GEN-END:variables
 }

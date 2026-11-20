@@ -4,9 +4,11 @@
  */
 package ucr.ac.cr.animalitos.view;
 
+import ucr.ac.cr.animalitos.model.PageInteractive;
+
 /**
  *
- * @author Rachel
+ * @author Axel, Rachel, Jimena
  */
 public class PanleDataDatoCuriosoUno extends javax.swing.JPanel {
 
@@ -16,6 +18,10 @@ public class PanleDataDatoCuriosoUno extends javax.swing.JPanel {
     public PanleDataDatoCuriosoUno() {
         initComponents();
     }
+    
+    public void displayText(PageInteractive page){
+        txtQuestion.setText(page.getContent());
+    } //End of displayText method
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -31,7 +37,7 @@ public class PanleDataDatoCuriosoUno extends javax.swing.JPanel {
         lblTitulo = new javax.swing.JLabel();
         lblCuadroImagen = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        txtQuestion = new javax.swing.JTextArea();
 
         setBackground(new java.awt.Color(243, 241, 237));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -41,7 +47,7 @@ public class PanleDataDatoCuriosoUno extends javax.swing.JPanel {
         btnVolver.setForeground(new java.awt.Color(165, 69, 69));
         btnVolver.setText("Volver");
         btnVolver.setBorderPainted(false);
-        btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVolverActionPerformed(evt);
@@ -90,16 +96,14 @@ public class PanleDataDatoCuriosoUno extends javax.swing.JPanel {
 
         jScrollPane1.setBackground(new java.awt.Color(177, 160, 128));
 
-        jTextArea1.setBackground(new java.awt.Color(177, 160, 128));
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Berlin Sans FB", 1, 24)); // NOI18N
-        jTextArea1.setForeground(new java.awt.Color(0, 0, 0));
-        jTextArea1.setLineWrap(true);
-        jTextArea1.setRows(5);
-        jTextArea1.setText(" Los pulpos tienen tres corazones (dos bombean sangre a las branquias y uno al resto del cuerpo) y su sangre es de color azul.");
-        jTextArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jTextArea1.setSelectionColor(new java.awt.Color(0, 0, 0));
-        jScrollPane1.setViewportView(jTextArea1);
+        txtQuestion.setBackground(new java.awt.Color(177, 160, 128));
+        txtQuestion.setColumns(20);
+        txtQuestion.setFont(new java.awt.Font("Berlin Sans FB", 1, 24)); // NOI18N
+        txtQuestion.setLineWrap(true);
+        txtQuestion.setRows(5);
+        txtQuestion.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        txtQuestion.setSelectionColor(new java.awt.Color(0, 0, 0));
+        jScrollPane1.setViewportView(txtQuestion);
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 350, 240));
     }// </editor-fold>//GEN-END:initComponents
@@ -112,9 +116,9 @@ public class PanleDataDatoCuriosoUno extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnVolver;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JPanel lblCuadroImagen;
     private javax.swing.JPanel lblCuadroTitulo;
     private javax.swing.JLabel lblTitulo;
+    private javax.swing.JTextArea txtQuestion;
     // End of variables declaration//GEN-END:variables
 }

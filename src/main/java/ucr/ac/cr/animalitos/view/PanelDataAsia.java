@@ -6,7 +6,7 @@ package ucr.ac.cr.animalitos.view;
 
 /**
  *
- * @author Rachel
+ * @author Axel, Rachel, Jimena
  */
 public class PanelDataAsia extends javax.swing.JPanel {
 
@@ -27,6 +27,7 @@ public class PanelDataAsia extends javax.swing.JPanel {
     private void initComponents() {
 
         btnVolver = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(243, 241, 237));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -43,6 +44,9 @@ public class PanelDataAsia extends javax.swing.JPanel {
             }
         });
         add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 90, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asia.png"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
@@ -52,5 +56,6 @@ public class PanelDataAsia extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnVolver;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

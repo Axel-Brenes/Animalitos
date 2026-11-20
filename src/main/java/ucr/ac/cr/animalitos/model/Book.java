@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Axel
+ * @author Axel, Rachel, Jimena
  */
 public class Book {
     

@@ -6,27 +6,17 @@ package ucr.ac.cr.animalitos.model;
 
 /**
  *
- * @author Axel Abdiel Brenes Mora
+ * @author Axel, Rachel, Jimena
  */
 public class PageInteractive extends Page{
-    
-    private String question;
+       
     private String answer;
     
-    public PageInteractive(String question, String answer, String title, String content, int number) {
+    public PageInteractive(String answer, String title, String content, int number) {
         super(title, content, number);
-        this.question = question;
         this.answer = answer;
     } //End of Constructor
-
-    public String getQuestion() {
-        return question;
-    }
-
-    public void setQuestion(String question) {
-        this.question = question;
-    }
-
+    
     public String getAnswer() {
         return answer;
     }

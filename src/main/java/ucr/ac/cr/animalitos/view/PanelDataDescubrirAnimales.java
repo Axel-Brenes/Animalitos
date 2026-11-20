@@ -27,8 +27,8 @@ public class PanelDataDescubrirAnimales extends javax.swing.JPanel {
     private void initComponents() {
 
         JPnlBackground = new javax.swing.JPanel();
-        lblImagenAnimales = new javax.swing.JLabel();
         btnOpcionDescubrir = new javax.swing.JButton();
+        lblImagenAnimales = new javax.swing.JLabel();
         btnVolver = new javax.swing.JButton();
         btnOpcionAnimalesPorContinente = new javax.swing.JButton();
         lblTitulo = new javax.swing.JLabel();
@@ -38,17 +38,13 @@ public class PanelDataDescubrirAnimales extends javax.swing.JPanel {
         JPnlBackground.setBackground(new java.awt.Color(243, 241, 237));
         JPnlBackground.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblImagenAnimales.setBackground(new java.awt.Color(188, 213, 229));
-        lblImagenAnimales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descarga (1).png"))); // NOI18N
-        JPnlBackground.add(lblImagenAnimales, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, 690, 520));
-
         btnOpcionDescubrir.setBackground(new java.awt.Color(188, 213, 229));
         btnOpcionDescubrir.setFont(new java.awt.Font("Berlin Sans FB", 1, 18)); // NOI18N
         btnOpcionDescubrir.setForeground(new java.awt.Color(96, 73, 60));
         btnOpcionDescubrir.setText("Descubrir");
         btnOpcionDescubrir.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnOpcionDescubrir.setBorderPainted(false);
-        btnOpcionDescubrir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnOpcionDescubrir.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnOpcionDescubrir.setFocusPainted(false);
         btnOpcionDescubrir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,11 +53,15 @@ public class PanelDataDescubrirAnimales extends javax.swing.JPanel {
         });
         JPnlBackground.add(btnOpcionDescubrir, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 300, 50));
 
+        lblImagenAnimales.setBackground(new java.awt.Color(188, 213, 229));
+        lblImagenAnimales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AnimalitosDescubrir.png"))); // NOI18N
+        JPnlBackground.add(lblImagenAnimales, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 10, 690, 520));
+
         btnVolver.setBackground(new java.awt.Color(243, 241, 237));
         btnVolver.setFont(new java.awt.Font("Berlin Sans FB", 1, 18)); // NOI18N
         btnVolver.setForeground(new java.awt.Color(165, 69, 69));
         btnVolver.setText("Volver");
-        btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVolverActionPerformed(evt);
@@ -75,7 +75,7 @@ public class PanelDataDescubrirAnimales extends javax.swing.JPanel {
         btnOpcionAnimalesPorContinente.setText("Animales por Continente");
         btnOpcionAnimalesPorContinente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnOpcionAnimalesPorContinente.setBorderPainted(false);
-        btnOpcionAnimalesPorContinente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnOpcionAnimalesPorContinente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnOpcionAnimalesPorContinente.setFocusPainted(false);
         btnOpcionAnimalesPorContinente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

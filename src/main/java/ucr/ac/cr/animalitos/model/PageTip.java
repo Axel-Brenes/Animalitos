@@ -6,7 +6,7 @@ package ucr.ac.cr.animalitos.model;
 
 /**
  *
- * @author Axel Abdiel Brenes Mora
+ * @author Axel, Rachel, Jimena
  */
 public class PageTip extends Page{
     

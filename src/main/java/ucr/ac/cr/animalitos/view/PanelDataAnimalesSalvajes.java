@@ -6,7 +6,7 @@ package ucr.ac.cr.animalitos.view;
 
 /**
  *
- * @author Rachel
+ * @author Axel, Rachel, Jimena
  */
 public class PanelDataAnimalesSalvajes extends javax.swing.JPanel {
 

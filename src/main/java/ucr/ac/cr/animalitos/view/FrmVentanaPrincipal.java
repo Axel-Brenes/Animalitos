@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Rachel
+ * @author Axel, Rachel, Jimena
  */
 public class FrmVentanaPrincipal extends javax.swing.JFrame {
 

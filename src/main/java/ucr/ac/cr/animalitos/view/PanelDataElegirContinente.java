@@ -6,7 +6,7 @@ package ucr.ac.cr.animalitos.view;
 
 /**
  *
- * @author Rachel
+ * @author Axel, Rachel, Jimena
  */
 public class PanelDataElegirContinente extends javax.swing.JPanel {
 
@@ -28,83 +28,110 @@ public class PanelDataElegirContinente extends javax.swing.JPanel {
 
         btnAsia = new javax.swing.JButton();
         btnEuropa = new javax.swing.JButton();
-        btnAmerica = new javax.swing.JButton();
+        btnAmericaSur = new javax.swing.JButton();
         btnOseania = new javax.swing.JButton();
         btnAfrica = new javax.swing.JButton();
         btnArtantica = new javax.swing.JButton();
         btnVolver = new javax.swing.JButton();
         lblTitulo = new javax.swing.JLabel();
+        btnAmericaNorte = new javax.swing.JButton();
+        btnAmerica3 = new javax.swing.JButton();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField8 = new javax.swing.JTextField();
         lblContinentes = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(184, 208, 225));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnAsia.setBackground(new java.awt.Color(96, 73, 60));
+        btnAsia.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        btnAsia.setForeground(new java.awt.Color(255, 255, 255));
+        btnAsia.setText("6");
         btnAsia.setBorderPainted(false);
-        btnAsia.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAsia.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnAsia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAsiaActionPerformed(evt);
             }
         });
-        add(btnAsia, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, 30, 20));
+        add(btnAsia, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 120, 50, 30));
 
         btnEuropa.setBackground(new java.awt.Color(96, 73, 60));
+        btnEuropa.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        btnEuropa.setForeground(new java.awt.Color(255, 255, 255));
+        btnEuropa.setText("4");
         btnEuropa.setBorderPainted(false);
-        btnEuropa.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEuropa.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnEuropa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEuropaActionPerformed(evt);
             }
         });
-        add(btnEuropa, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 160, 30, 20));
+        add(btnEuropa, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, 50, 30));
 
-        btnAmerica.setBackground(new java.awt.Color(96, 73, 60));
-        btnAmerica.setBorderPainted(false);
-        btnAmerica.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAmerica.addActionListener(new java.awt.event.ActionListener() {
+        btnAmericaSur.setBackground(new java.awt.Color(96, 73, 60));
+        btnAmericaSur.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        btnAmericaSur.setForeground(new java.awt.Color(255, 255, 255));
+        btnAmericaSur.setText("2");
+        btnAmericaSur.setBorderPainted(false);
+        btnAmericaSur.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnAmericaSur.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAmericaActionPerformed(evt);
+                btnAmericaSurActionPerformed(evt);
             }
         });
-        add(btnAmerica, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 30, 20));
+        add(btnAmericaSur, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 50, 30));
 
         btnOseania.setBackground(new java.awt.Color(96, 73, 60));
+        btnOseania.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        btnOseania.setForeground(new java.awt.Color(255, 255, 255));
+        btnOseania.setText("7");
         btnOseania.setBorderPainted(false);
-        btnOseania.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnOseania.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnOseania.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnOseaniaActionPerformed(evt);
             }
         });
-        add(btnOseania, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, 30, 20));
+        add(btnOseania, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 310, 50, -1));
 
         btnAfrica.setBackground(new java.awt.Color(96, 73, 60));
+        btnAfrica.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        btnAfrica.setForeground(new java.awt.Color(255, 255, 255));
+        btnAfrica.setText("5");
         btnAfrica.setBorderPainted(false);
-        btnAfrica.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAfrica.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnAfrica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAfricaActionPerformed(evt);
             }
         });
-        add(btnAfrica, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, 30, 20));
+        add(btnAfrica, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 240, 50, 30));
 
         btnArtantica.setBackground(new java.awt.Color(96, 73, 60));
+        btnArtantica.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        btnArtantica.setForeground(new java.awt.Color(255, 255, 255));
+        btnArtantica.setText("3");
         btnArtantica.setBorderPainted(false);
-        btnArtantica.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnArtantica.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnArtantica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnArtanticaActionPerformed(evt);
             }
         });
-        add(btnArtantica, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 450, 30, 20));
+        add(btnArtantica, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 440, 50, 30));
 
         btnVolver.setBackground(new java.awt.Color(243, 241, 237));
         btnVolver.setFont(new java.awt.Font("Berlin Sans FB", 1, 18)); // NOI18N
         btnVolver.setForeground(new java.awt.Color(165, 69, 69));
         btnVolver.setText("Volver");
         btnVolver.setBorderPainted(false);
-        btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVolverActionPerformed(evt);
@@ -116,6 +143,109 @@ public class PanelDataElegirContinente extends javax.swing.JPanel {
         lblTitulo.setForeground(new java.awt.Color(96, 73, 60));
         lblTitulo.setText("Selecciona un continente!");
         add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, -1, 25));
+
+        btnAmericaNorte.setBackground(new java.awt.Color(96, 73, 60));
+        btnAmericaNorte.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        btnAmericaNorte.setForeground(new java.awt.Color(255, 255, 255));
+        btnAmericaNorte.setText("1");
+        btnAmericaNorte.setBorderPainted(false);
+        btnAmericaNorte.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnAmericaNorte.setMaximumSize(new java.awt.Dimension(80, 40));
+        btnAmericaNorte.setMinimumSize(new java.awt.Dimension(80, 40));
+        btnAmericaNorte.setPreferredSize(new java.awt.Dimension(80, 50));
+        btnAmericaNorte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAmericaNorteActionPerformed(evt);
+            }
+        });
+        add(btnAmericaNorte, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 50, 30));
+
+        btnAmerica3.setBackground(new java.awt.Color(96, 73, 60));
+        btnAmerica3.setBorderPainted(false);
+        btnAmerica3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnAmerica3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAmerica3ActionPerformed(evt);
+            }
+        });
+        add(btnAmerica3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, 30, 20));
+
+        jTextField2.setBackground(new java.awt.Color(249, 233, 210));
+        jTextField2.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(102, 51, 0));
+        jTextField2.setText("7. Oceanía");
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, -1, -1));
+
+        jTextField3.setBackground(new java.awt.Color(249, 233, 210));
+        jTextField3.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(102, 51, 0));
+        jTextField3.setText("1. América del Norte");
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, -1));
+
+        jTextField4.setBackground(new java.awt.Color(249, 233, 210));
+        jTextField4.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jTextField4.setForeground(new java.awt.Color(102, 51, 0));
+        jTextField4.setText("2. América del Sur");
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, -1));
+
+        jTextField5.setBackground(new java.awt.Color(249, 233, 210));
+        jTextField5.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jTextField5.setForeground(new java.awt.Color(102, 51, 0));
+        jTextField5.setText("3. Antártida");
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
+        add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, -1));
+
+        jTextField6.setBackground(new java.awt.Color(249, 233, 210));
+        jTextField6.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jTextField6.setForeground(new java.awt.Color(102, 51, 0));
+        jTextField6.setText("4. Europa");
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField6ActionPerformed(evt);
+            }
+        });
+        add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
+
+        jTextField7.setBackground(new java.awt.Color(249, 233, 210));
+        jTextField7.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jTextField7.setForeground(new java.awt.Color(102, 51, 0));
+        jTextField7.setText("5. África");
+        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField7ActionPerformed(evt);
+            }
+        });
+        add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, -1, -1));
+
+        jTextField8.setBackground(new java.awt.Color(249, 233, 210));
+        jTextField8.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jTextField8.setForeground(new java.awt.Color(102, 51, 0));
+        jTextField8.setText("6. Asia");
+        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField8ActionPerformed(evt);
+            }
+        });
+        add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, -1, -1));
 
         lblContinentes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Continentes.jpg"))); // NOI18N
         add(lblContinentes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 490));
@@ -129,9 +259,9 @@ public class PanelDataElegirContinente extends javax.swing.JPanel {
         FrmVentanaPrincipal.ShowJPanel(new PanelDataDescubrirAnimales());
     }//GEN-LAST:event_btnVolverActionPerformed
 
-    private void btnAmericaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAmericaActionPerformed
-        FrmVentanaPrincipal.ShowJPanel(new PanelDataAmerica());
-    }//GEN-LAST:event_btnAmericaActionPerformed
+    private void btnAmericaSurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAmericaSurActionPerformed
+        FrmVentanaPrincipal.ShowJPanel(new PanelDataAmericaSur());
+    }//GEN-LAST:event_btnAmericaSurActionPerformed
 
     private void btnEuropaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEuropaActionPerformed
         FrmVentanaPrincipal.ShowJPanel(new PanelDataEuropa());
@@ -149,15 +279,60 @@ public class PanelDataElegirContinente extends javax.swing.JPanel {
         FrmVentanaPrincipal.ShowJPanel(new PanelDataAntartica());
     }//GEN-LAST:event_btnArtanticaActionPerformed
 
+    private void btnAmericaNorteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAmericaNorteActionPerformed
+        FrmVentanaPrincipal.ShowJPanel(new PanelDataAmericaNorte());
+    }//GEN-LAST:event_btnAmericaNorteActionPerformed
+
+    private void btnAmerica3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAmerica3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAmerica3ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField6ActionPerformed
+
+    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField7ActionPerformed
+
+    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField8ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAfrica;
-    private javax.swing.JButton btnAmerica;
+    private javax.swing.JButton btnAmerica3;
+    private javax.swing.JButton btnAmericaNorte;
+    private javax.swing.JButton btnAmericaSur;
     private javax.swing.JButton btnArtantica;
     private javax.swing.JButton btnAsia;
     private javax.swing.JButton btnEuropa;
     private javax.swing.JButton btnOseania;
     private javax.swing.JButton btnVolver;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
     private javax.swing.JLabel lblContinentes;
     private javax.swing.JLabel lblTitulo;
     // End of variables declaration//GEN-END:variables
